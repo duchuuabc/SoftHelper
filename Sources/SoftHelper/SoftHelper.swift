@@ -10,8 +10,7 @@ public protocol SOTPHelperDelegate {
 }
 
 public protocol SoftFlowDelegate {
-    func showVNPSoftFlow(target: AnyObject, tranCode: String?)
-    func onChangePinSoft(tranCode: String) throws
+    func onChangePinSoft(tranCode: String, completionOnSuccess: @escaping (() -> Void)) throws
     func pushCreatePinSoftDropOffTransaction()
     func pushRegisterSoft()
 }
