@@ -4,6 +4,7 @@ public protocol SOTPHelperDelegate {
     var isSoftLogined: Bool { get }
     var isPinSoftExpired: Bool { get }
     var currentComboType : String { get }
+    var isSoftHasPIN: Bool { get }
     func loginSoft(withPIN: String) throws -> Bool
     func getOTP() -> String
     func getOTPHighValueTransaction(tranCode: String) -> String
