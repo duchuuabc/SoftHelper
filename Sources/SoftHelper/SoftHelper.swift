@@ -1,4 +1,6 @@
 public protocol SOTPHelperDelegate {
+    var isSoftActivated: Bool { get }
+    var currentUserActivatedSoft: String? { get }
     var isSoftLogined: Bool { get }
     var isPinSoftExpired: Bool { get }
     var currentComboType : String { get }
