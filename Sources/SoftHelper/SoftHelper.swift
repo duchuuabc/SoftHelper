@@ -14,7 +14,7 @@ public protocol SOTPHelperDelegate {
 }
 
 public protocol SoftFlowDelegate {
-    func onChangePinSoft(tranCode: String) throws
-    func pushCreatePinSoftDropOffTransaction()
-    func pushRegisterSoft()
+    func onChangePinSoft(tranCode: String, target: UIViewController?) throws
+    func pushCreatePinSoftDropOffTransaction(target: UIViewController?)
+    func pushRegisterSoft(target: UIViewController?)
 }
