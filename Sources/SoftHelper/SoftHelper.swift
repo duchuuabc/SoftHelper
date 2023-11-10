@@ -14,8 +14,10 @@ public protocol SOTPHelperDelegate {
     func doSyncTime() -> Int
 }
 
+public protocol SDKBankController : UIViewController {}
+
 public protocol SoftFlowDelegate {
-    func onChangePinSoft(tranCode: String, target: UIViewController?) throws
-    func pushCreatePinSoftDropOffTransaction(target: UIViewController?)
-    func pushRegisterSoft(target: UIViewController?)
+    func onChangePinSoft(tranCode: String, target: SDKBankController?) throws
+    func pushCreatePinSoftDropOffTransaction(target: SDKBankController?)
+    func pushRegisterSoft(target: SDKBankController?)
 }
