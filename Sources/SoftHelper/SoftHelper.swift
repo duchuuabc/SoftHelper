@@ -14,7 +14,7 @@ public protocol SOTPHelperDelegate {
     func doSyncTime() -> Int
 }
 
-@objc public protocol SDKBankController : UIViewController {}
+public protocol SDKBankController : UIViewController {}
 
 public protocol SoftFlowDelegate {
     func onChangePinSoft(tranCode: String, target: SDKBankController?) throws
