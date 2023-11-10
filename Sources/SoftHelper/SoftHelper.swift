@@ -1,3 +1,4 @@
+import UIKit
 public protocol SOTPHelperDelegate {
     var isSoftActivated: Bool { get }
     var currentUserActivatedSoft: String? { get }
