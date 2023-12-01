@@ -20,4 +20,5 @@ public protocol SoftFlowDelegate {
     func onChangePinSoft(tranCode: String, target: SDKBankController?) throws
     func pushCreatePinSoftDropOffTransaction(target: SDKBankController?)
     func pushRegisterSoft(target: SDKBankController?)
+    func pushForgotPinSoft(target: SDKBankController?)
 }
